@@ -1,0 +1,39 @@
+{
+    "provider": {
+        "name": "Foo_Provider"
+    },
+    "consumer": {
+        "name": "Foo_Consumer"
+    },
+    "interactions": [
+        {
+            "description": "a request for Foos",
+            "request": {
+                "method": "GET",
+                "path": "/foos"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": [
+                    {
+                        "value": 42
+                    },
+                    {
+                        "value": 100
+                    }
+                ]
+            }
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "2.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.3.6"
+        }
+    }
+}
